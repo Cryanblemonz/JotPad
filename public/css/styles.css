@@ -1,5 +1,5 @@
 body{
-    background-color: #576F72;
+    background-color: #395B50;
     text-align: center;
     color: #F0EBE3;
 }
@@ -33,6 +33,18 @@ body{
 #popular{
     padding-top: 2rem;
 }
+
+#about button{
+    background-color:#5a7684!important;
+    border: none;
+}
+
+.about-card{
+    background-color:#395B50!important;
+    border: none!important;
+}
+
+
 
 #writtenTop{    
     font-size: 6rem;
