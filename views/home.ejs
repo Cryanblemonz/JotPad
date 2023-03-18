@@ -2,11 +2,25 @@
 <section id="intro">
     <div id="title">
         <h1 id="writtenTop">JotPad</h1>
-        <div><h2  class="hidden" id="writtenBottom"><i>Jot that down</i></h2></div>
+        <div class="block"><h2  class="hidden" id="writtenBottom"><i>Jot that down</i></h2></div>
     </div>
+</section>
 
+<section id="get-started">
+    <div>
+        <h1 class="started">Get Started</h1>
+        <h3 class="share">Share your thoughts on Jotpad</h3>
+        <button class="btn btn-dark" action="/register" method="post" name="register">Sign up!</button>
+        <button class="btn btn-light" action="/login" method="post" name="login">Sign in!</button>
+    </div>
+</section>
 
-
+<section id="popular">
+    <h1>Popular Posts</h1>
+    <% for(i=0; i<posts.length; i++){ %>
+        <h2><%= posts[i].title %> </h2>
+        <p><%= posts[i].body %></p>
+   <% } %>
 </section>
 
 

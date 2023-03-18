@@ -7,5 +7,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   $(window).on('load', function(){
-    setTimeout(function(){ $('h2').fadeIn(1500).removeClass('hidden')},3000);
-  })
+    setTimeout(function(){ $('h2').fadeIn(2500)},3000);
+  }) 
