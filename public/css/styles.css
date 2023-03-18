@@ -1,0 +1,22 @@
+body{
+    background-color: #576F72;
+    text-align: center;
+}
+
+.navbar{
+    background-color: #E4DCCF;
+}
+
+#title{
+    padding: 10vh 5vw;
+    color: #F0EBE3;
+}
+
+h1{
+    font-size: 7rem;
+    font-family: mynerve;
+}
+
+.hidden{
+    display: none;
+}
