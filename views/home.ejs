@@ -2,7 +2,7 @@
 <section id="intro">
     <div id="title">
         <h1 id="writtenTop">JotPad</h1>
-        <div class="block"><h2  class="hidden" id="writtenBottom"><i>Jot that down</i></h2></div>
+        <div class="block"><h2  class="hidden" id="writtenBottom"><i>~Jot that down~</i></h2></div>
     </div>
 </section>
 
@@ -17,12 +17,25 @@
 <hr>
 <section id="popular">
     <h1 class="popular-heading">Popular Posts</h1>
-    <% for(i=0; i<posts.length; i++){ %>
-        <h3 class="left"><%= posts[i].title %> </h2>
-        <p class="left"><strong><%= posts[i].author %> </strong></p>
-        <p class="left"><%= posts[i].body.substring(0,100) + " ..." %> <a href="/Post/<%= posts.title %>">Read More</a></p>
-        <hr>
+    
+    <% if(posts.length!=0){ %>
+        <% posts.forEach(function(post){ %>
+            <div class="post">
+                <h3 class="left"><%= post.title %> </h2>
+                <p class="left"><strong><%= post.author %> </strong></p>
+                <p class="left"> <%= post.body.substring(0,300) + " ..." %> <a href="/posts/<%= post.title %>">Read More</a></p>
+                <hr>
+            </div>
+       <% }) %>
+   <% } else { %>
+        <h2>Nothing here yet! Try posting our first story!</h2>
    <% } %>
+
+ 
+ 
+
+
+
 </section>
 
 

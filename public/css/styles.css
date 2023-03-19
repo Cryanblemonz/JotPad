@@ -2,15 +2,22 @@ body{
     background-color: #395B50;
     text-align: center;
     color: #F0EBE3;
-    padding: 10px;
 }
 
-p{
+.footer{
+    background-color:#E4DCCF;
+}
 
+.footer-content{
+    padding: 10px 0 0 0;
+    color: #395B50;
+    font-size: 1.3rem;
+    opacity: 50%;   
 }
 
 .navbar{
     background-color: #E4DCCF;
+    margin: 0;
 }
 
 #title{
@@ -18,18 +25,53 @@ p{
     height: 200px;
 }
 
+#popular h2{
+    padding: 25px;
+    opacity: 75%;
+    font-size: 1.4rem;
+}
 #about{
     text-align: left;
-    margin: 5% 15% 0 15%;
+    margin: 2% 15% 0 5%;
 }
 
-h1{
-    padding-bottom: 2rem;
+#terms{
+    margin: 2% 15%;
+    text-align: left;
 }
 
-#about h1{
+#terms h1{
+    padding-bottom: 25px;
+}
+
+#contact{
+    margin: 2% 15% 0 5%;
+}
+
+.contact-label{
+    padding: 2px 0 10px 0;
+}
+
+.contact-info{
+    padding-top: 20px; 
+    padding-left: 80px;
+}
+
+.post{
+    text-align: left;
+    margin: 5%;
+}
+
+
+
+#post h1{
+    padding-bottom: 1rem;
+}
+
+.page-heading{
     font-size: 3rem;
     font-weight: 900;
+    padding-top: 40px;
 }
 
 #about p{
