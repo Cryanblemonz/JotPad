@@ -2,6 +2,11 @@ body{
     background-color: #395B50;
     text-align: center;
     color: #F0EBE3;
+    padding: 10px;
+}
+
+p{
+
 }
 
 .navbar{
@@ -18,9 +23,12 @@ body{
     margin: 5% 15% 0 15%;
 }
 
+h1{
+    padding-bottom: 2rem;
+}
+
 #about h1{
     font-size: 3rem;
-    padding-bottom: 2rem;
     font-weight: 900;
 }
 
@@ -30,21 +38,24 @@ body{
 #about h2{
     font-weight: 700;
 }
-#popular{
-    padding-top: 2rem;
+
+h3{
+    font-size: 1.25     rem;
 }
 
 #about button{
     background-color:#5a7684!important;
     border: none;
 }
+ 
+#get-started button{
+    margin: 1% 1% 1% 1%;
+}
 
 .about-card{
     background-color:#395B50!important;
     border: none!important;
 }
-
-
 
 #writtenTop{    
     font-size: 6rem;
@@ -68,9 +79,26 @@ body{
     font-size: 1.2rem;
 }
 
-#postTitle, #postBody{
+#postTitle, #postBody, #postAuthor{
     width: 90%;
     margin: auto;
     max-width: 750px;
 }
 
+.left{
+    text-align: left;
+}
+
+hr{
+    width: 5%;
+    margin: 30px auto 30px auto;
+    border-style: dotted hidden hidden hidden;
+    border-width: .5rem;
+}
+
+@media(max-width: 450px){
+    hr{
+        border-width: .25rem;
+    }
+    
+}

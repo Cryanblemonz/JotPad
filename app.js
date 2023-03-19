@@ -12,26 +12,37 @@ app.use(express.urlencoded({extended: true}));
 
 app.get("/", function(req, res){
     res.render('home', {posts: posts});
-})
+});
 
 app.get("/about", function(req, res){
     res.render('about');
-})
+});
+
+app.get("/contact", function(req, res){
+    res.render('contact');
+});
 
 app.get("/compose", function(req, res){
     res.render('compose')
 })
+
+app.get("/Post/:id", function(req, res){
+    let lowerCasePostTitle = _.lowerCase(posts[i].title)
+    let postTitle = posts[i].title;
+    let postBody = posts[i].body;
+        if(_.lowerCase(req.params.id == lowerCasePostTitle)){
+            res.render('Post', {postTitle: postTitle, postBody: postBody})
+        }
+        })
+
 app.post("/compose", function(req,res){
     let post = {
         title: req.body.postTitle,
+        author: req.body.postAuthor,
         body: req.body.postBody
     }
     posts.push(post);
-    console.log(posts);
     res.redirect("/");
-
-
-    // res.render('home', {postTitle: postTitle, postBody: postBody});
 })
 
 app.listen(3000, function(req,res){
