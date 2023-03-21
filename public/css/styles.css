@@ -68,6 +68,7 @@ body{
 .post{
     text-align: left;
     margin: 5%;
+    line-height: 2;
 }
 
 
@@ -90,7 +91,8 @@ body{
 }
 
 h3{
-    font-size: 1.25     rem;
+
+    padding-bottom: .75rem;
 }
 
 #about button{
