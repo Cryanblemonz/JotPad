@@ -6,10 +6,14 @@ body{
 
 .footer{
     background-color:#E4DCCF;
+    position: fixed;;
+    bottom: 0;
+    width: 100vw;
+    height: 30px;
 }
 
 .footer-content{
-    padding: 10px 0 0 0;
+    padding: 0 0 0 0;
     color: #395B50;
     font-size: 1.3rem;
     opacity: 50%;   
